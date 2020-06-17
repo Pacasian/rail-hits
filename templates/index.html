@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>
+        Railway IP setter
+    </title>
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            background-color: bisque;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        html {
+            box-sizing: border-box
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit
+        }
+        .center {
+            position: absolute;
+            top: 20%;
+            right: 0;
+            left: 0;
+            height: 8%;
+            color: white;
+
+
+        }
+        .navBar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 8%;
+            color: white;
+            background-color: #1A237E;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="navBar">
+    <center><h1>Railway IP Setter</h1></center>
+    </div>
+<center class="center">
+<h3 style=" color: #1A237E;">Current Server IP: {{ showIp }}</h3>
+<form method="POST" action=/manage_ip>
+    <input type="text" name="ipAddress"/>
+    <input type="submit" name="action" value="Submit"/>
+</form>
+    </center>
+</body>
+
+</html>
